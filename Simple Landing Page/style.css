@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+    scroll-behavior: smooth;
+}
+body {
+    background: url(bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #fff;
+}
+
+
+/* header start here */
+nav {
+    background-color: #1d1e23;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    height: 50px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    border-bottom: 3px solid #fff;
+}
+/* header end here */
+
+
+/* home start here */
+.home{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.home-text{
+    padding: 60px;
+    text-align: center;
+    width: 60%;
+}
+.home-text span{
+    letter-spacing: 3px;
+    font-size: 20px;
+    font-weight: 500;
+    background: transparent;
+    color: #1d1e23;
+    box-shadow: 0 0 20px #1d1e23;
+    border-radius: 5px;
+}
+.home-text h1{
+    font-size: 3rem;
+    text-shadow: 3px 3px 3px #1d1e23;
+}
+.home-text p{
+    font-size: 15px;
+    color: #010101;
+}
+.home-text a{
+    text-decoration: none;
+    background: #1d1e23;
+    padding: 10px 20px;
+    color: #fff;
+    letter-spacing: 5px;
+    transition: 0.4s;
+}
+.home-text a:hover{
+    background: transparent;
+    color: #1d1e23;
+    box-shadow: 0 0 20px #1d1e23;
+    cursor: pointer;
+}
+/* home end here */
+
+
+/* about start here*/
+.about{
+    height: 100vh;
+}
+.about h1{
+    color: #1d1e23;
+    font-size: 3.7rem;
+    padding-left: 30px;
+    font-weight: 700;
+}
+.about p{
+    font-size: 25px;
+    color: #010101;
+    width: 100%;
+    padding: 0 120px;
+    line-height: 32px;
+    text-align: center;
+}
+/* about end here */
+
+
+/* contact start here*/
+.Contact h1{
+    color: #1d1e23;
+    font-size: 3.7rem;
+    padding-left: 30px;
+    font-weight: 700;
+}
+.Contact p{
+    color: #010101;
+    font-size: 25px;
+    width: 100%;
+    padding: 0 120px;
+    line-height: 32px;
+    text-align: center;
+}
+
+.contact-form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 3rem;
+}
+.contact-form form{
+    position: relative;
+    width: 500px;
+}
+form input, form textarea{
+    width: 100%;
+    padding: 20px;
+    border: none;
+    outline: none;
+    background: #25262d;
+    color: #fff;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+form input::placeholder,
+form textarea::placeholder{
+    color: #fff;
+    font-size: 15px;
+}
+form textarea{
+    resize: none;
+}
+form .send-btn{
+    display: inline-block;
+    padding: 11px 25px;
+    background: #1d1e23;
+    color: var(--bg-color);
+    border: 2px solid #1d1e23;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    transition: all .6s;
+    width: 30%;
+}
+form .send-btn:hover{
+    background: transparent;
+    color: #1d1e23;
+    box-shadow: 0 0 20px #1d1e23;
+    cursor: pointer;
+}
+/* contact end here*/
